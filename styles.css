@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heading{
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.full-screen{
+    background-image: url("pexels-nextvoyage-730662.jpg");
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.log-container{
+    background-color: hsl(200,100%,6%,0.7);
+    box-shadow: 0 0 15px 0 hsl(200,100%,6%,0.7);
+    padding: 40px 30px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
+    margin: 0;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 40px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.input-group label{
+    color: white;
+    font-weight: lighter;
+}
+.input-group input{
+    background-color: hsl(200,100%,90%,0.3);
+    padding: 0.5em;
+    font-size: 1.1em;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight:100;
+    border-radius: 0.25em;
+}
+.input-group input:focus{
+    box-shadow: 0 0 0 1px hsl(200,60%,50%);
+}
+.success input{
+    box-shadow: 0 0 0 1px hsl(100,60%,50%);
+}
+.error input{
+    box-shadow: 0 0 0 1px hsl(0,60%,50%);
+}
+.input-group .msg{
+    display: none;
+    color: white;
+}
+.success .msg{
+    display: block;
+    color:hsl(100,60%,50%);
+}
+.error .msg{
+    display: block;
+    color: hsl(0,60%,50%);
+}
+.login-button{
+    padding: 0.8em 1em;
+    font-size: 1.25em;
+    font-weight: lighter;
+    background-color: hsl(200,60%,50%,0.25);
+    color: white;
+    border-radius: 0.25em;
+    border: 1px solid rgb(36, 109, 146);
+    cursor: pointer;
+}
+.login-button:hover{
+    background-color: hsl(200,100%,50%,0.1);
+}
+
+.login-button:focus{
+    background-color:  hsl(200,60%,50%,0.2);
+}
